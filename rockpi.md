@@ -23,6 +23,7 @@ back to cli:` Ctrl+Alt+F3`
 ```bash
 ssh rock@10.24.2.1  #ustb-wifi rock@rock-4c-plus
 ssh rock@192.168.94.25  #vivoS9
+ssh rock@192.168.3.16  #ros_1st
 ```
 ssh no password
 ```bash
@@ -35,4 +36,11 @@ install Dependency package
 sudo rosdep init
 rosdep update
 rosdep install --from-paths src --ignore-src --rosdistro=${ROS_DISTRO} -y
+```
+
+### wifi
+start hotports
+```bash  
+nmcli  device wifi connect mySSID password '12345678'   #  nmcli connectio up mySSID
+nmcli device wifi hotspot con-name ap001 ifname wlp3s0 ssid rock-pi-4c password 12345678 #mcli connection up ap001
 ```
