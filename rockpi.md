@@ -21,7 +21,18 @@ back to cli:` Ctrl+Alt+F3`
 
 ### connect
 ```bash
-ssh rock@10.24.36.75  ustb-wifi
-ssh rock@192.168.94.25  vivoS9
+ssh rock@10.24.2.1  #ustb-wifi rock@rock-4c-plus
+ssh rock@192.168.94.25  #vivoS9
 ```
-
+ssh no password
+```bash
+ssh-keygen
+ssh-copy-id -i ~/.ssh/id_rsa.pub rock@10.24.2.1
+```
+### ROS 
+install Dependency package
+```bash
+sudo rosdep init
+rosdep update
+rosdep install --from-paths src --ignore-src --rosdistro=${ROS_DISTRO} -y
+```
