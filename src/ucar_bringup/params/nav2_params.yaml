@@ -209,7 +209,7 @@ local_costmap:
         mark_threshold: 0
         observation_sources: scan
         scan:
-          topic: /scan
+          topic: /scan_raw
           max_obstacle_height: 2.0
           clearing: True
           marking: True
@@ -240,7 +240,7 @@ global_costmap:
         enabled: True
         observation_sources: scan
         scan:
-          topic: /scan
+          topic: /scan_raw
           max_obstacle_height: 2.0
           clearing: True
           marking: True
@@ -263,7 +263,7 @@ map_server:
     use_sim_time: False
     # Overridden in launch by the "map" launch configuration or provided default value.
     # To use in yaml, remove the default "map" value in the tb3_simulation_launch.py file & provide full path to map below.
-    yaml_filename: "~/ws/wr_robot/src/ucar_bringup/map"
+    yaml_filename: "~/ws/wr_robot/src/ucar_bringup/map/4.16-1.yaml"
 map_saver:
   ros__parameters:
     use_sim_time: False

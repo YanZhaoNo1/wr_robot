@@ -24,7 +24,7 @@ if(BUILD_TESTING)
 endif()
 
 install(
-  DIRECTORY launch param map rviz
+  DIRECTORY launch params maps rviz
   DESTINATION share/${PROJECT_NAME}
 )
 ament_package()
