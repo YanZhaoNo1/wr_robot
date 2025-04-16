@@ -83,7 +83,7 @@ DESTINATION lib/${PROJECT_NAME}
 )
 
 install(
-  DIRECTORY launch config
+  DIRECTORY launch
   DESTINATION share/${PROJECT_NAME}
 )
 ament_package()
