@@ -40,6 +40,4 @@ def generate_launch_description():
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(static_tf_launch_file)
         ),
-
-
     ])
