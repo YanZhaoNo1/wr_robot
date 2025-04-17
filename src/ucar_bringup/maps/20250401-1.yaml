@@ -1,0 +1,6 @@
+image: /home/zy/ws/slam_ws/map/mymap.pgm
+resolution: 0.050000
+origin: [-36.643466, -4.057025, 0.0]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
