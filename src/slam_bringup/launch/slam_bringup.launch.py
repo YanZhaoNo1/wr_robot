@@ -33,9 +33,9 @@ def generate_launch_description():
         ),
 
         # 启动雷达去畸变
-        IncludeLaunchDescription(
-            PythonLaunchDescriptionSource(lidar_undistortion_launch_file)
-        ),
+        # IncludeLaunchDescription(
+        #     PythonLaunchDescriptionSource(lidar_undistortion_launch_file)
+        # ),
         # 启动静态 TF 变换
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(static_tf_launch_file)
