@@ -2,7 +2,7 @@
 start hotports
 ```bash  
 nmcli  device wifi connect mySSID password '12345678'   #  nmcli connectio up mySSID
-nmcli device wifi hotspot con-name ap001 ifname wlp3s0 ssid rock-pi-4c password 12345678 #mcli connection up ap001
+nmcli device wifi hotspot con-name ap001 ifname wlp3s0 ssid rock-pi-4c password 12345678 #nmcli connection up ap001
 ```
 ### connect
 ```bash
@@ -47,6 +47,8 @@ install Dependency package
 sudo rosdep init
 rosdep update
 rosdep install --from-paths src --ignore-src --rosdistro=${ROS_DISTRO} -y
+
+ros2 run tf2_tools view_frames
 ```
 
 ### set my driver 
