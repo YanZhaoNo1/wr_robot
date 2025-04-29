@@ -17,9 +17,9 @@ def generate_launch_description():
     static_tf_launch_file = os.path.join(
         FindPackageShare("slam_bringup").find("slam_bringup"), "launch", "static_tf.launch.py"
     )
-    lidar_undistortion_launch_file = os.path.join(
-        FindPackageShare("lidar_undistortion").find("lidar_undistortion"), "launch", "lidar_undistortion.launch.py"
-    )
+    # lidar_undistortion_launch_file = os.path.join(
+    #     FindPackageShare("lidar_undistortion").find("lidar_undistortion"), "launch", "lidar_undistortion.launch.py"
+    # )
 
     return LaunchDescription([
         # 启动 RPLidar
