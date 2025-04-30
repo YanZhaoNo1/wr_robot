@@ -1,6 +1,5 @@
 amcl:
   ros__parameters:
-    use_sim_time: False
     alpha1: 0.2
     alpha2: 0.2
     alpha3: 0.2
@@ -12,7 +11,7 @@ amcl:
     beam_skip_threshold: 0.3
     do_beamskip: false
     global_frame_id: "map"
-    lambda_short: 0.1c
+    lambda_short: 0.1
     laser_likelihood_max_dist: 2.0
     laser_max_range: 50.0
     laser_min_range: 0.3
@@ -199,7 +198,7 @@ local_costmap:
       always_send_full_costmap: True
 
       # robot_radius: 0.23
-      footprint: "[[0.375, 0.375], [0.375, -0.375], [-0.375, -0.375], [-0.375, 0.375]]"
+      footprint: "[[0.49, 0.35], [0.49, -0.35], [-0.49, -0.35], [-0.49, 0.35]]"
       footprint_padding: 0.02
 
       plugins: ["static_layer", "obstacle_layer", "inflation_layer"]
@@ -234,7 +233,6 @@ local_costmap:
   local_costmap_rclcpp_node:
     ros__parameters:
       use_sim_time: False
-
 global_costmap:
   global_costmap:
     ros__parameters:
@@ -250,7 +248,7 @@ global_costmap:
       track_unknown_space: True
 
       robot_radius: 0.23
-      footprint: "[[0.375, 0.375], [0.375, -0.375], [-0.375, -0.375], [-0.375, 0.375]]"
+      footprint: "[[0.49, 0.35], [0.49, -0.35], [-0.49, -0.35], [-0.49, 0.35]]"
       # footprint_padding: 0.03
 
       plugins: ["static_layer", "obstacle_layer", "inflation_layer"]
