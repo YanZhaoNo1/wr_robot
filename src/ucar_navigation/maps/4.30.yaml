@@ -1,4 +1,4 @@
-image: /home/zy/ws/wr_robot/src/ucar_navigation/maps/.pgm
+image: /home/zy/ws/wr_robot/src/ucar_navigation/maps/4.30.pgm
 resolution: 0.050000
 origin: [-18.052408, -35.426761, 0.0]
 negate: 0
