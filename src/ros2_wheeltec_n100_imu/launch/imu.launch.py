@@ -11,7 +11,7 @@ def generate_launch_description():
             package='wheeltec_n100_imu', 
             executable='imu_node', 
             parameters=[{
-                'serial_port': '/dev/ttyACM0',
+                'serial_port': '/dev/ttyACM1',
                 'serial_baud': 921600,
                 'debug': False,
                 'imu_frame': 'imu',

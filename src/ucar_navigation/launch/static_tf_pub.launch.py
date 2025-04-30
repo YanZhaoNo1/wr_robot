@@ -11,12 +11,17 @@ def generate_launch_description():
         #     name='static_tf_odom',
         #     arguments=['0', '0', '0', '0.924', '-0.383', '0', '0','map', 'odom'], # x 0.924 y -0383 
         #     output='screen'),
-
+        # Node(
+        #     package='tf2_ros',
+        #     executable='static_transform_publisher',
+        #     name='static_tf_odom',
+        #     arguments=['0', '0', '0', '0', '0', '0', '1','odom', 'base_footprint'],
+        #     output='screen'),
         Node(
             package='tf2_ros',
             executable='static_transform_publisher',
             name='static_tf_odom',
-            arguments=['0', '0', '0', '0', '0', '0', '1','odom', 'base_link'],
+            arguments=['0', '0', '0', '0', '0', '0', '1','base_footprint', 'base_link'],
             output='screen'),
 
         Node(

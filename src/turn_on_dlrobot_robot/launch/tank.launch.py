@@ -43,7 +43,7 @@ def generate_launch_description():
             parameters=[{'usart_port_name': '/dev/ttyACM0',
                 'serial_baud_rate': 115200,
                 'robot_frame_id': 'base_footprint',
-                'odom_frame_id': 'odom_combined',
+                'odom_frame_id': 'odom',
                 'cmd_vel': 'cmd_vel',
                 'akm_cmd_vel': 'none',
                 'product_number': 0,}],

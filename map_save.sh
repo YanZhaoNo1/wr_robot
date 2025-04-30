@@ -11,7 +11,7 @@ if [ -z "$1" ]; then
 fi
 
 MAP_NAME=$1
-MAP_DIR="/home/zy/ws/wr_robot/src/ucar_bringup/maps"
+MAP_DIR="/home/zy/ws/wr_robot/src/ucar_navigation/maps"
 PBSTREAM_FILE="$MAP_DIR/$MAP_NAME.pbstream"
 MAP_FILESTEM="$MAP_DIR/$MAP_NAME"
 

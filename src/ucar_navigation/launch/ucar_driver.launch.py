@@ -17,7 +17,7 @@ def generate_launch_description():
         FindPackageShare("turn_on_dlrobot_robot").find("turn_on_dlrobot_robot"), "launch", "tank.launch.py"
     )
     static_tf_launch_file = os.path.join(
-        FindPackageShare("ucar_bringup").find("ucar_bringup"), "launch", "static_tf_pub.launch.launch.py"
+        FindPackageShare("ucar_navigation").find("ucar_navigation"), "launch", "static_tf_pub.launch.py"
     )
 
     return LaunchDescription([
