@@ -117,6 +117,11 @@ def generate_launch_description():
             output='screen'),
 
         IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(os.path.join(launch_dir, 'ekf.launch.py')),
+            launch_arguments={'namespace': namespace,
+                              'use_sim_time': use_sim_time,}.items()),
+
+        IncludeLaunchDescription(
             PythonLaunchDescriptionSource(os.path.join(launch_dir,
                                                        'localization.launch.py')),
             condition=IfCondition(PythonExpression(['not ', slam])),
