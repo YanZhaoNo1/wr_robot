@@ -1,0 +1,6 @@
+image: /home/zy/ws/wr_robot/src/ucar_navigation/maps/5.21-1.pgm
+resolution: 0.050000
+origin: [-5.494270, -4.564244, 0.0]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
