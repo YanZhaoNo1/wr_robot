@@ -1,0 +1,5 @@
+<library path="motions_lib">
+  <class type="nav2_amcl::AckermannMotionModel" base_class_type="nav2_amcl::MotionModel">
+    <description>This is a Ackermann plugin.</description>
+  </class>
+</library>
