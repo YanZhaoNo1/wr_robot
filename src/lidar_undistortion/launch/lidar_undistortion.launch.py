@@ -12,12 +12,12 @@ def generate_launch_description():
     lidar_undistortion_node = launch_ros.actions.Node(
         package='lidar_undistortion', executable='lidar_undistortion_node', output='screen',
         parameters=[{
-            'lidar_topic':'/scan_raw',
+            'lidar_topic':'/scan',
             'lidar_msg_delay_time': 10.0,
             'scan_direction_clockwise': True,
-            'imu_topic': '/imu',
+            'imu_topic': '/imu_link',
             'imu_frequency': 100.0,
-            'output_frame_id': 'laser',
+            'output_frame_id': 'laser_after',
             'pub_raw_scan_pointcloud': True,
             'pub_laserscan': True,
             'laserscan_angle_increment': 0.004,
@@ -31,7 +31,7 @@ def generate_launch_description():
             'radius_outlier_filter_search_radius': 0.1,
             'radius_outlier_filter_min_neighbors': 2,
         }],
-        remappings=[('/lidar_undistortion/scan','/scan')]
+        # remappings=[('/lidar_undistortion/scan','/scan')]
     )
 
     return LaunchDescription([

@@ -71,7 +71,7 @@ def generate_launch_description():
     declare_map_yaml_cmd = DeclareLaunchArgument(
         'map',
         default_value=os.path.join(
-            bringup_dir, 'maps', '4.30.yaml'),
+            bringup_dir, 'maps', '5.23-1.yaml'),
         description='Full path to map file to load')
 
     declare_use_sim_time_cmd = DeclareLaunchArgument(
@@ -133,6 +133,19 @@ def generate_launch_description():
                               'use_composition': use_composition,
                               'use_respawn': use_respawn,
                               'container_name': 'nav2_container'}.items()),
+        # IncludeLaunchDescription(
+        #     PythonLaunchDescriptionSource(os.path.join(launch_dir, 'carto_localization.launch.py')),
+        #     launch_arguments={
+        #         'namespace': namespace,
+        #         'map': map_yaml_file,
+        #         'use_sim_time': use_sim_time,
+        #         'autostart': autostart,
+        #         'params_file': params_file,
+        #         'use_composition': use_composition,
+        #         'use_respawn': use_respawn,
+        #         'container_name': 'nav2_container',
+        #     }.items(),
+        #     ),
 
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(os.path.join(launch_dir, 'map.launch.py')),
